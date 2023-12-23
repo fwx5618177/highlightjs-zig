@@ -4,6 +4,10 @@
 
 Zig - a language grammar for highlightjs
 
+Performance:
+
+<img src="./image.png" width="300" height="400">
+
 ### Usage
 
 ```javascript
