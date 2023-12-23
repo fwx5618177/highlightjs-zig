@@ -1,0 +1,25 @@
+{
+  "name": "highlightjs-zig",
+  "version": "1.0.6",
+  "description": "highlight.js syntax definition for zig",
+  "main": "src/zig.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fwx5618177/highlightjs-zig.git"
+  },
+  "keywords": [
+    "zig",
+    "highlight.js",
+    "highlightjs",
+    "syntax"
+  ],
+  "author": "fwx5618177<fwx5618177@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fwx5618177/highlightjs-zig/issues"
+  },
+  "homepage": "https://github.com/fwx5618177/highlightjs-zig"
+}

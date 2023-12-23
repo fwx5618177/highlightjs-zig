@@ -1,0 +1,91 @@
+/* 关键字 */
+.hljs-keyword {
+    color: #c678dd;
+    /* 深紫色，用于突出关键字 */
+}
+
+/* 标点符号 */
+.hljs-punctuation {
+    color: #8ff810;
+    /* 淡蓝色，用于标点符号，避免与操作符颜色混淆 */
+}
+
+/* 可选参数和类型 */
+.hljs-optional {
+    color: #e5c07b;
+    /* 橙色，用于突出显示可选参数和类型 */
+}
+
+/* 错误处理符号 */
+.hljs-errorhandling {
+    color: #e06c75;
+    /* 淡红色，用于错误处理符号 */
+}
+
+/* 宏调用 */
+.hljs-macro {
+    color: #61afef;
+    /* 亮蓝色，用于宏调用，保持加粗 */
+    font-weight: bold;
+}
+
+/* 函数声明 */
+.hljs-function {
+    color: #61afef;
+    /* 深蓝色，用于函数声明 */
+}
+
+/* 函数调用 */
+.hljs-function-call {
+    color: #e5c07b;
+    /* 橙色，用于突出显示函数调用 */
+}
+
+/* 函数参数 */
+.hljs-params {
+    color: #98c379;
+    /* 淡绿色，用于函数参数 */
+}
+
+/* 操作符 */
+.hljs-operator {
+    color: #d19a66;
+    /* 棕色，用于操作符，与标点符号区分 */
+}
+
+/* 数字 */
+.hljs-number {
+    color: #dcdcaa;
+    /* 淡黄色，用于数字 */
+}
+
+/* 字符串 */
+.hljs-string {
+    color: #98c379;
+    /* 淡绿色，用于字符串 */
+}
+
+/* 注释 */
+.hljs-comment {
+    color: #5c6370;
+    /* 淡灰色，用于注释，确保清晰可读 */
+}
+
+/* TODO注释 */
+.hljs-comment-todo {
+    color: #d19a66;
+    /* 橙色，用于TODO注释 */
+    font-weight: bold;
+    /* 加粗，以增加可见性 */
+}
+
+.hljs-meta-event {
+    color: #ff79c6;
+    /* 粉色 */
+    font-weight: bold;
+    /* 加粗 */
+}
+
+.hljs-literal {
+    color: #e06c75;
+}
