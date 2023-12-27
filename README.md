@@ -8,7 +8,7 @@ Performance:
 
 <img src="./image.png" width="300" height="400">
 
-### Usage
+### Usage for Node or another
 
 ```javascript
 var hljs = require('highlightjs');

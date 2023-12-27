@@ -149,24 +149,43 @@ const zigLanguageSupport = (hljs) => {
         className: "property",
         begin: /\.\w+/,
       },
-      // 数字
+      hljs.C_LINE_COMMENT_MODE,
+      hljs.QUOTE_STRING_MODE,
+      hljs.APOS_STRING_MODE,
+      hljs.C_NUMBER_MODE,
+      {
+        className: "string",
+        begin: "@[a-zA-Z_]\\w*",
+      },
+      {
+        className: "meta",
+        begin: /@[a-zA-Z_]\w*/,
+      },
+      {
+        className: "symbol",
+        begin: /'[a-zA-Z_][a-zA-Z0-9_]*'/,
+      },
+      {
+        className: "literal",
+        begin: /\\[xuU][a-fA-F0-9]+/,
+      },
       {
         className: "number",
-        variants: [
-          {
-            begin:
-              "\\b0x[0-9a-fA-F_]*(\\.[0-9a-fA-F_]*)?([pP][+-]?[0-9a-fA-F_]+)?\\b",
-          },
-          { begin: "\\b[0-9][0-9_]*(\\.[0-9][0-9_]*)?([eE][+-]?[0-9_]+)?\\b" },
-          { begin: "\\b[0-9][0-9_]*\\b" },
-          { begin: "\\b0x[a-fA-F0-9_]+\\b" },
-          { begin: "\\b0o[0-7_]+\\b" },
-          { begin: "\\b0b[01_]+\\b" },
-        ],
+        begin: /\b0x[0-9a-fA-F]+/,
       },
-      // 字符串
-      hljs.QUOTE_STRING_MODE,
-      // 函数声明
+      {
+        className: "number",
+        begin: /\b0b[01]+/,
+      },
+      {
+        className: "number",
+        begin: /\b0o[0-7]+/,
+      },
+      {
+        className: "number",
+        begin: /\b[0-9]+\b/,
+      },
+      hljs.REGEXP_MODE,
       {
         className: "function",
         beginKeywords: "fn",
@@ -199,10 +218,10 @@ const zigLanguageSupport = (hljs) => {
         ],
       },
       // 标点符号
-      {
-        className: "punctuation",
-        begin: /[{}=\[\];(),.:]/,
-      },
+      // {
+      //   className: "punctuation",
+      //   begin: /[{}=\[\];(),.:]/,
+      // },
       // 特殊宏调用
       {
         className: "macro",
