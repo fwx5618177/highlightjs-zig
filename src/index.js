@@ -1,3 +1,8 @@
+/*
+Language: Zig
+Author: fwx <fwx5618177@gmail.com>
+*/
+
 const zigLanguageSupport = (hljs) => {
   const LITERALS = ["true", "false", "null", "undefined"];
   const BUILT_INS = [

@@ -2,9 +2,12 @@
   "name": "highlightjs-zig",
   "version": "1.0.6",
   "description": "highlight.js syntax definition for zig",
-  "main": "src/zig.js",
+  "main": "dist/zig.min.js",
+  "module": "dist/zig.es.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:cjs": "webpack --config webpack.cjs.config.js",
+    "build:esm": "webpack --config webpack.esm.config.js",
+    "build": "npm run build:cjs && npm run build:esm"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/fwx5618177/highlightjs-zig/issues"
   },
-  "homepage": "https://github.com/fwx5618177/highlightjs-zig"
+  "homepage": "https://github.com/fwx5618177/highlightjs-zig",
+  "dependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
